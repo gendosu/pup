@@ -43,6 +43,12 @@ Even better, let's grab the titles too:
 $ curl -s https://news.ycombinator.com/ | pup 'table table tr:nth-last-of-type(n+2) td.title a json{}'
 ```
 
+## Quick Start with Docker
+
+```
+$ curl -s https://news.ycombinator.com/ | docker run --rm -i gentest/pup pup 'table table tr:nth-last-of-type(n+2) td.title a'
+```
+
 ## Basic Usage
 
 ```bash
